@@ -1,10 +1,10 @@
-from Employee import Employee
-class PermanentEmployee(Employee):
-    def calculate_salary(self):
+from Employee import Employee   # import the employee base class
+class PermanentEmployee(Employee):  # inherit from employee class
+    def calculate_salary(self):       # override the salary calculation method
         total_salary = self.basic_salary+(self.basic_salary *20)/100
         print("total salary:",total_salary)
         return total_salary
-    def display_detail(self):
+    def display_detail(self):     # display details
         print("name:",self.name)
         print("basic salary:",self.basic_salary)
         print("work mode:",self.work_mode)  
